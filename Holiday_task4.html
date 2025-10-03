@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Typography Demo</title>
+
+  <!-- Import Google Font (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* -------------------------------------------------------
+       1. Text & Font Properties
+       --------------------------------------------------------
+       color          → text color
+       font-size      → size of the text
+       font-weight    → thickness (normal, bold, 100–900)
+       font-style     → normal, italic, oblique
+       text-align     → left, right, center, justify
+       text-decoration→ underline, overline, line-through, none
+       line-height    → space between lines
+       letter-spacing → space between characters
+       word-spacing   → space between words
+       text-transform → uppercase, lowercase, capitalize
+    */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Apply Google Font (Roboto) */
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      color: darkblue;
+    }
+
+    /* Paragraph font styling */
+    .styled-text {
+      color: darkslategray;
+      font-size: 18px;
+      font-weight: bold;      /* bold */
+      font-style: italic;     /* italic */
+      text-decoration: underline; /* underline */
+    }
+
+    /* Text alignment practice */
+    .left   { text-align: left; }
+    .right  { text-align: right; }
+    .center { text-align: center; }
+    .justify{ text-align: justify; }
+
+    /* Text transform examples */
+    .upper { text-transform: uppercase; }
+    .lower { text-transform: lowercase; }
+    .cap   { text-transform: capitalize; }
+
+    /* Spacing & line height demo */
+    .spacing-demo {
+      font-size: 16px;
+      line-height: 2;          /* double spacing between lines */
+      letter-spacing: 3px;     /* space between letters */
+      word-spacing: 10px;      /* space between words */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Typography Examples</h1>
+
+  <!-- Task 1: Different font styles -->
+  <h2>Font Styles (bold, italic, underline)</h2>
+  <p class="styled-text">This paragraph is bold, italic, and underlined using CSS properties.</p>
+
+  <!-- Task 2: Text alignment -->
+  <h2>Text Alignment</h2>
+  <p class="left">This text is aligned LEFT.</p>
+  <p class="right">This text is aligned RIGHT.</p>
+  <p class="center">This text is aligned CENTER.</p>
+  <p class="justify">This text is JUSTIFIED, meaning extra spaces are added between words so that both left and right edges align evenly in the paragraph box.</p>
+
+  <!-- Task 3: Text Transform -->
+  <h2>Text Transform</h2>
+  <p class="upper">this text is uppercase.</p>
+  <p class="lower">THIS TEXT IS LOWERCASE.</p>
+  <p class="cap">this text is capitalized at the start of each word.</p>
+
+  <!-- Task 4: Spacing -->
+  <h2>Line Height, Letter Spacing, Word Spacing</h2>
+  <p class="spacing-demo">
+    This paragraph has increased line-height,
+    letter-spacing, and word-spacing
+    to make the differences clearly visible.
+  </p>
+
+  <!-- Task 5: Google Fonts -->
+  <h2>Heading with Google Font (Roboto)</h2>
+  <p>This heading and subheading are using a Google Font imported from <b>Google Fonts</b>.</p>
+
+</body>
+</html>
